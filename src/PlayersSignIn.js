@@ -28,10 +28,6 @@ class PlayersSignIn extends Component {
     console.log(PlayerOneObj)
     this.setState({playerOneDetails: PlayerOneObj})
     //store obj in mongodb
-    return axios.post('/api/messages', PlayerOneObj).then(result => {
-      .then((response) => {
-        console.log('saved successfully')
-    }).catch(console.log)
   }
 
   getPlayerTwoInfo(PlayerTwoObj) {

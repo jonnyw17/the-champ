@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const app = express();
 mongoose.Promise = Promise;
-const db = "mongodb://localhost/theChamp"
+const db = "mongodb://localhost:27017/theChamp"
 mongoose.connect(db, {useMongoClient: true})
 .then(() => console.log('successfully connected to', db))
 .catch(err => console.log('connection failed', err));
