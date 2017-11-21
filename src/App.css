@@ -9,13 +9,32 @@ body {
   padding:10px
 }
 
-.platform{
-  border:solid #000 1px;
-  width:50%;
-  margin:0 auto;
-  text-align: center;
+/*PLATFORM CSS*/
+.platForm-main-div {
+  background-color: #A8562B;
+  width:100vw;
+  height:100vh;
 }
 
-.test {
-  color: blue
+.platform-top {
+  width:85%;
+  margin:0 auto;
+  text-align: center;
+  background-color:#000;
+  height:55px;
+}
+
+.platform{
+  width:85%;
+  margin:0 auto;
+  text-align: center;
+  background-color:#000;
+  height:55px;
+  margin-top:30px
+}
+
+.platform-name {
+  color:#d7d7d7;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:600
 }
