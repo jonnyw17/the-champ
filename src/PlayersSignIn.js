@@ -4,7 +4,7 @@ import PlayerOneForm from './PlayerOneForm';
 import PlayerTwoForm from './PlayerTwoForm';
 import PlayerOneDetailsConfirmed from './PlayerOneDetailsConfirmed';
 import PlayerTwoDetailsConfirmed from './PlayerTwoDetailsConfirmed';
-import request from 'superagent';
+import axios from 'axios';
 
 class PlayersSignIn extends Component {
   constructor(props) {
@@ -25,9 +25,11 @@ class PlayersSignIn extends Component {
   }
 
   getPlayerOneInfo(PlayerOneObj) {
-    console.log(PlayerOneObj)
-    this.setState({playerOneDetails: PlayerOneObj})
     //store obj in mongodb
+    axios.post(`http://localhost:3001/api/users`, {PlayerOneObj})
+      .then(res => {
+        console.log('data sent to localhost:3001')
+    }).catch(console.log)
   }
 
   getPlayerTwoInfo(PlayerTwoObj) {

@@ -3,7 +3,9 @@ const Schema = mongoose.Schema;
 
 const User = new Schema({
   userName: String,
-  currentChamp: Boolean
+  twitterHandle: String,
+  wonLastMatch: Boolean
 }, {collection: 'theChamp'});
 
-module.exports = mongoose.model('User', User)
+const newUser = mongoose.model('User', User)
+module.exports = newUser

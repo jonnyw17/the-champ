@@ -22,7 +22,7 @@ class SignUp extends Component {
       <h3>
         Player Two
       </h3>
-      <form onSubmit={this.handleSubmit} className="uk-form-horizontal uk-margin-large">
+      <form onSubmit={this.handleSubmit} action="http://localhost:3001/api/users" method="post" className="uk-form-horizontal uk-margin-large">
         <div className="uk-margin">
           <label className="uk-form-label">Worms Name</label>
           <div className="uk-form-controls">

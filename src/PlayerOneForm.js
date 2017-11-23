@@ -22,7 +22,7 @@ class PlayerOneForm extends Component {
       <h3>
         Player One
       </h3>
-      <form onSubmit={this.handleSubmit} className="uk-form-horizontal uk-margin-large">
+      <form onSubmit={this.handleSubmit} action="http://localhost:3001/api/users" method="post" className="uk-form-horizontal uk-margin-large">
         <div className="uk-margin">
           <label className="uk-form-label">Worms Name</label>
           <div className="uk-form-controls">
@@ -33,7 +33,7 @@ class PlayerOneForm extends Component {
             <input className="uk-input" id="form-horizontal-text" type="text" name="twitterHandle" placeholder="@"/>
           </div>
         </div>
-        <input type="submit"/>
+        <input type="submit" />
       </form>
     </div>
     );
